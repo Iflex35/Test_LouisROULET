@@ -19,9 +19,9 @@ Lors de la modification d'un animal, l'instance est directement modifiée dans l
 Lors de la suppression d'un animal, les instances sont supprimées dans  la table "animales" et dans la table qui correspondait à son type.
 
 Les couleurs des lignes correspondent à :
-vert clair -> reptile
-bleu clair -> mammifère
-jaune clair -> oiseau
+vert clair -> reptile; 
+bleu clair -> mammifère; 
+jaune clair -> oiseau; 
 
 Pour accèder au tableau : http://localhost/Test_LouisROULET/public/animal
 ## About Laravel
