@@ -7,6 +7,23 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
+
+## Test Apitic
+
+Application CRUD avec Laravel : Classe Animal,Mammifère,Oiseau et Reptile. La classe mère Animal contient les attributs "name", "type" et "descr". 
+La classe Reptile contient une méthode hiss() et un attribut $scale, la classe Mammifère une méthode growl() et un attribut $fur et la classe Oiseau contient une méthode tweet() et un attribut $feathers.
+Lors de l'ajout d'un animal, une instance de l'animal se crée dans la table "animales" et dans la table qui correspond au type de l'animal (exemple : table "reptiles" pour le type reptile).
+
+Lors de la modification d'un animal, l'instance est directement modifiée dans la table "animales". Si on change le type, alors on supprime l'ancienne instance de l'animal, et on en crée une dans la table qui correspond au type.
+
+Lors de la suppression d'un animal, les instances sont supprimées dans  la table "animales" et dans la table qui correspondait à son type.
+
+Les couleurs des lignes correspondent à :
+vert clair -> reptile
+bleu clair -> mammifère
+jaune clair -> oiseau
+
+Pour accèder au tableau : http://localhost/Test_LouisROULET/public/animal
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
