@@ -12,7 +12,7 @@ class AnimalController extends Controller
 {
     protected $animalRepository;
 
-    protected $nbrPerPage = 10;
+    protected $nbrPerPage = 5;
 
     public function __construct(AnimalRepository $animalRepository)
     {
