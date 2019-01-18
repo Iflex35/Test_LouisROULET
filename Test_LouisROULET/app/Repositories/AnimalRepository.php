@@ -127,6 +127,9 @@ class AnimalRepository
 
 	public function destroy($id)
 	{
+		$this->reptile->deleteReptile($id);
+		$this->mammifere->deleteMammifere($id);
+		$this->oiseau->deleteOiseau($id);
 		$this->getById($id)->delete();
 	}
 
