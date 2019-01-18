@@ -21,8 +21,8 @@ class CreateMammiferesTable extends Migration
 			$table->foreign('animal_id')
 				  ->references('id')
 				  ->on('animals')
-				  ->onDelete('restrict')
-				  ->onUpdate('restrict');
+				  ->onDelete('cascade')
+				  ->onUpdate('cascade');
 		
         });
     } 
